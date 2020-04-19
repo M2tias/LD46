@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df816170296d56a4bac3797d8ee452db, type: 3}
+  m_Name: Config
+  m_EditorClassIdentifier: 
+  gasInACan: 30
+  maxGasInTank: 100
+  maxGasCansCarried: 3
+  playerSpeed: 260
+  zombieSpeed: 125
+  zombieWaveSpeed: 350
+  carSpeed: 750
+  runningCarGasConsumption: 0
+  idleCarGasConsumption: 0.5
+  playerMaxHP: 10
+  zombieMaxHP: 1
+  shotgunDamage: 0.34
+  zombieHitDamage: 1
+  startGas: 100
+  startZombieWaveDistance: 400
+  startCans: 0
+  startPlayerHP: 10
+  shootDelay: 1
+  normalVolume: 0.5
+  lesserVolume: 0.3
+  zombieSoundChance: 0.1
+  zombieSoundRange: 15
+  zombieSoundDelay: 1
+  zombiePlayerActivationRange: 10
+  zombieCarActivationRange: 18
+  zombieCarActivationTimeout: 3
+  zombieShootingActivationRange: 15
+  zombieShootingActivationTimeout: 3
+  zombieHitRange: 1.8
+  zombieHitDelay: 3
