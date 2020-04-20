@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -34,6 +35,20 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void FixedUpdate()
+    {
+        float carCoef = car.GetPlayerInCar() ? -0.5f : 1f;
+        runtime.ZombieWaveDistance -= config.ZombieWaveSpeed * carCoef * Time.fixedDeltaTime;
+        if(runtime.ZombieWaveDistance <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+        if(runtime.PlayerHP <= 0)
+        {
+            SceneManager.LoadScene("GameOverHitToDeath");
+        }
     }
 
     public Player GetPlayer()

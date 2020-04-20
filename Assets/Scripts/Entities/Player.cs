@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     {
         vertical = Input.GetAxisRaw("Vertical");
         horizontal = Input.GetAxisRaw("Horizontal");
-        if (Mathf.Abs(vertical) > 0)
+        if (Mathf.Abs(vertical) > 0 || Mathf.Abs(horizontal) > 0)
         {
             animator.SetBool("Walking", true);
         }
@@ -50,6 +50,8 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Vector3 moveVert = Vector3.forward * vertical * Time.fixedDeltaTime * config.PlayerSpeed;
+        Vector3 moveHori = Vector3.right * horizontal * Time.fixedDeltaTime * config.PlayerSpeed;
         Vector2 movement = new Vector3(horizontal, vertical).normalized * Time.fixedDeltaTime * config.PlayerSpeed;
         Vector3 pos = body.position;
 
@@ -96,8 +98,9 @@ public class Player : MonoBehaviour
             /*shotgunParticles.Stop();*/
         }
 
-        body.velocity = transform.forward * movement.y
-            + transform.right * movement.x;//new Vector3(movement.x, 0, movement.y);
+        body.velocity = moveVert + moveHori;
+        //body.velocity = transform.forward * movement.y
+        //    + transform.right * movement.x;//new Vector3(movement.x, 0, movement.y);
     }
 
     public bool GetShoot()

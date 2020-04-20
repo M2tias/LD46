@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: a62154567b10f4c4e9d231023ea39eb1
+  - enabled: 1
+    path: Assets/Scenes/Textures.unity
+    guid: d730f6ab798e1c5499bdcbfcaa097b96
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 49f1821196a07424c8bf8007cb3a35de
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 4163ecb9f15d30f4fa8ebe7585405daf
+  - enabled: 1
+    path: Assets/Scenes/GameOverGas.unity
+    guid: ab92117a3dff44b48a843dca2fad10c4
+  - enabled: 1
+    path: Assets/Scenes/GameOverHitToDeath.unity
+    guid: 8b7b4432cf5acb54b9ed90c8372725fd
   m_configObjects: {}

@@ -17,16 +17,16 @@ MonoBehaviour:
   maxGasCansCarried: 3
   playerSpeed: 260
   zombieSpeed: 125
-  zombieWaveSpeed: 350
+  zombieWaveSpeed: 6
   carSpeed: 750
-  runningCarGasConsumption: 0
+  runningCarGasConsumption: 6
   idleCarGasConsumption: 0.5
   playerMaxHP: 10
   zombieMaxHP: 1
   shotgunDamage: 0.34
   zombieHitDamage: 1
   startGas: 100
-  startZombieWaveDistance: 400
+  startZombieWaveDistance: 450
   startCans: 0
   startPlayerHP: 10
   shootDelay: 1

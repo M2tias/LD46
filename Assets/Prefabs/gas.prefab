@@ -107,3 +107,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runtime: {fileID: 11400000, guid: f77a74291c3ebdc49ac2e03d98f7face, type: 2}
+  config: {fileID: 11400000, guid: 9ef1f79a0c7bb1f4d95a39653359a6d4, type: 2}

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Car : MonoBehaviour
 {
@@ -114,7 +115,7 @@ public class Car : MonoBehaviour
             carRunning = false;
             playerInCar = false;
             // game over
-            Debug.Log("Game over!");
+            SceneManager.LoadScene("GameOverGas");
         }
     }
 
